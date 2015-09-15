@@ -578,6 +578,9 @@ record VariantCallingAnnotations {
 }
 
 record Genotype {
+  union { null, int } dbSnpId = null;
+  boolean inDbSnp = false;
+
   /**
    The variant called at this site.
    */
